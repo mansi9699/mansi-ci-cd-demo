@@ -28,7 +28,7 @@ jobs:
         with:
           current-version: '2.0.0'
           # changing minor semantic version
-          version-fragment: 'fragment'
+          version-fragment: 'feature'
       - name: Bumped Release Version
         run: echo ${{ steps.bump_version.outputs.next-version }}
       - name: Docker Build & Push Action
